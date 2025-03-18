@@ -1,11 +1,14 @@
 import Link from "next/link";
 import React from "react";
+import { IoGlobeOutline } from "react-icons/io5";
+import { MdLocationOn } from "react-icons/md";
 
 export default function Resume() {
   const companies = [
     {
       name: "CoLearn (PT IQ Edukasi)",
       link: "https://colearn.id",
+      location: "Remote, Indonesia",
       positions: [
         {
           name: "Senior Software Engineer",
@@ -22,6 +25,7 @@ export default function Resume() {
     {
       name: "CoLearn (PT IQ Edukasi)",
       link: "https://colearn.id",
+      location: "Remote, Indonesia",
       positions: [
         {
           name: "Product Engineer",
@@ -39,6 +43,7 @@ export default function Resume() {
     {
       name: "PT Aku Pintar Indonesia",
       link: "https://akupintar.id",
+      location: "Surabaya, Indonesia",
       positions: [
         {
           name: "iOS Developer",
@@ -73,7 +78,7 @@ export default function Resume() {
           <ul className="list-disc list-inside ml-5">
             <li className="mt-1">
               <strong>Major: </strong>
-              <span>{`Computer Science, Bachelor's degree`}</span>
+              <span>{`Computer Science (Informatics), Bachelor's degree`}</span>
               <strong> (GPA 3.6/4.0)</strong>
             </li>
             <li className="mt-1">
@@ -96,11 +101,17 @@ export default function Resume() {
               <strong className="text-2xl">{company.name}</strong>
               <br />
               <Link
-                className="text-blue-500 italic mt-2 hover:underline"
+                className="text-blue-500 italic mt-2 hover:underline inline-flex items-center"
                 href={company.link}
               >
+                <IoGlobeOutline className="mr-1" />
                 {company.link}
               </Link>
+              <br />
+              <span className="inline-flex items-center">
+                <MdLocationOn className="mr-1" />
+                {company.location}
+              </span>
               {company.positions.map((pos, idx) => (
                 <div className="mt-2" key={idx}>
                   <span className="text-lg font-semibold">{pos.name}</span>
