@@ -1,3 +1,4 @@
+import { accounts } from "./_utils/accounts";
 import "./globals.css";
 import Link from "next/link";
 
@@ -45,21 +46,20 @@ export default function RootLayout({
           `}
         >
           <div className="container mx-auto p-4">
-            <p>© 2024-{new Date().getFullYear()} by Ilham Aulia Majid</p>
             <div className="flex justify-center space-x-4 mt-2">
-              <Link
-                className="text-blue-500 hover:underline"
-                href="https://linkedin.com/in/ilaumjd"
-              >
-                LinkedIn
-              </Link>
-              <Link
-                className="text-blue-500 hover:underline"
-                href="https://github.com/ilaumjd"
-              >
-                GitHub
-              </Link>
+              {accounts.map((account) => (
+                <Link
+                  className="text-blue-500 hover:underline"
+                  href={account.link}
+                  key={account.link}
+                >
+                  {account.name}
+                </Link>
+              ))}
             </div>
+            <p className="mt-2">
+              © 2024-{new Date().getFullYear()} by Ilham Aulia Majid
+            </p>
           </div>
         </footer>
       </body>
