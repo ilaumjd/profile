@@ -16,12 +16,12 @@ export default function RootLayout({
     <html lang="en">
       <body className="min-h-screen flex flex-col bg-gray-100 text-gray-900">
         {/* Header */}
-        <header className="bg-black shadow">
+        <header className="bg-black shadow sticky top-0 z-50">
           <nav className="container mx-auto p-4 flex justify-between">
             <h1 className="text-2xl font-bold">Ilham AM</h1>
             <div className="space-x-4">
               <Link href="/" className="text-blue-500 hover:underline">
-                About Me
+                Home
               </Link>
               <Link href="/resume" className="text-blue-500 hover:underline">
                 Resume
@@ -38,11 +38,7 @@ export default function RootLayout({
           className={`
             bg-black shadow mt-8
             text-center text-sm text-gray-500
-            ${
-              // Apply fixed positioning on medium screens and above
-              // Static positioning on small screens
-              "md:fixed md:bottom-0 md:left-0 md:right-0"
-            }
+            ${"md:fixed md:bottom-0 md:left-0 md:right-0"}
           `}
         >
           <div className="container mx-auto p-4">
