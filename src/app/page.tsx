@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { accounts } from "./_utils/accounts";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -17,13 +18,11 @@ export default function Home() {
       <div className="flex justify-center mt-4 space-x-4">
         {accounts.map((account) => (
           <Link href={account.link} key={account.link}>
-            <Image
-              src={account.src}
-              alt={""}
-              className="w-6 h-6"
-              width={0}
-              height={0}
-            />
+            {account.name === "LinkedIn" ? (
+              <FaLinkedin size={24} />
+            ) : account.name === "GitHub" ? (
+              <FaGithub size={24} />
+            ) : null}
           </Link>
         ))}
       </div>
