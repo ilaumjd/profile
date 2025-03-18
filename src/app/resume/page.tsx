@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { IoGlobeOutline } from "react-icons/io5";
@@ -7,6 +8,7 @@ export default function Resume() {
   const companies = [
     {
       name: "CoLearn (PT IQ Edukasi)",
+      image: "/assets/colearn.png",
       link: "https://colearn.id",
       location: "Remote, Indonesia",
       positions: [
@@ -24,6 +26,7 @@ export default function Resume() {
     },
     {
       name: "CoLearn (PT IQ Edukasi)",
+      image: "/assets/colearn.png",
       link: "https://colearn.id",
       location: "Remote, Indonesia",
       positions: [
@@ -42,6 +45,7 @@ export default function Resume() {
     },
     {
       name: "PT Aku Pintar Indonesia",
+      image: "/assets/akupintar.png",
       link: "https://akupintar.id",
       location: "Surabaya, Indonesia",
       positions: [
@@ -98,6 +102,13 @@ export default function Resume() {
             key={index}
           >
             <div className="md:w-1/2">
+              <Image
+                src={company.image}
+                alt={""}
+                className="w-14 h-14 rounded-full mb-2 mx-auto md:mx-0"
+                width={72}
+                height={72}
+              />
               <strong className="text-2xl">{company.name}</strong>
               <br />
               <Link
