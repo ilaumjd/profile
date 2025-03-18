@@ -47,22 +47,18 @@ export default function RootLayout({
           <div className="container mx-auto p-4">
             <p>© 2024-{new Date().getFullYear()} by Ilham Aulia Majid</p>
             <div className="flex justify-center space-x-4 mt-2">
-              <a
-                href="https://github.com/ilaumjd"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
                 className="text-blue-500 hover:underline"
-              >
-                GitHub
-              </a>
-              <a
                 href="https://linkedin.com/in/ilaumjd"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline"
               >
                 LinkedIn
-              </a>
+              </Link>
+              <Link
+                className="text-blue-500 hover:underline"
+                href="https://github.com/ilaumjd"
+              >
+                GitHub
+              </Link>
             </div>
           </div>
         </footer>
