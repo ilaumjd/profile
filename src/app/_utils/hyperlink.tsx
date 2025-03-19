@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CgExternal } from "react-icons/cg";
 
 interface HyperlinkProps {
   text: string;
@@ -13,6 +14,7 @@ export default function Hyperlink({ text, url, className }: HyperlinkProps) {
       className={`text-accent hover:underline ${className || "mx-1"}`}
     >
       {text}
+      <CgExternal className="inline-block align-middle" />
     </Link>
   );
 }

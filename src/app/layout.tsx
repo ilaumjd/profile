@@ -3,6 +3,7 @@ import "./globals.css";
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import { navigations } from "./_utils/navigations";
+import Hyperlink from "./_utils/hyperlink";
 
 export const metadata = {
   title: "My Profile",
@@ -26,7 +27,10 @@ export default function RootLayout({
         {/* Header */}
         <header className="bg-background shadow sticky top-0 z-50">
           <nav className="container mx-auto p-8 md:px-30 flex justify-between">
-            <Link href="/" className="text-2xl font-bold hover:text-accent">
+            <Link
+              href="/"
+              className="text-2xl text-accent font-bold hover:text-accent"
+            >
               Ilham AM
             </Link>
             <div className="space-x-4">
@@ -53,13 +57,12 @@ export default function RootLayout({
           <div className="container mx-auto p-4">
             <div className="flex justify-center space-x-4 mt-2">
               {accounts.map((account) => (
-                <Link
+                <Hyperlink
+                  text={account.name}
+                  url={account.link}
                   className="text-accent hover:underline"
-                  href={account.link}
                   key={account.link}
-                >
-                  {account.name}
-                </Link>
+                />
               ))}
             </div>
             <p className="mt-2">

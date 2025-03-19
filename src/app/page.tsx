@@ -27,7 +27,7 @@ export default function Home() {
         {`Hi, I'm a software engineer with ${new Date().getFullYear() - 2020}+ YoE with strong expertise on mobile development, cloud services, and operational automation. Experienced on collaboration accross different timezones to deliver high-quality products. I enjoy solving complex challenges and building effective solutions.`}
       </p>
       <div className="mt-6 space-x-4">
-        {navigations.map((navigation, index) => (
+        {navigations.slice(1).map((navigation, index) => (
           <Link
             href={navigation.href}
             key={index}
