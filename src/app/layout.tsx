@@ -2,6 +2,7 @@ import { accounts } from "./_utils/accounts";
 import "./globals.css";
 import Link from "next/link";
 import { Inter } from "next/font/google";
+import { navigations } from "./_utils/navigations";
 
 export const metadata = {
   title: "My Profile",
@@ -25,14 +26,19 @@ export default function RootLayout({
         {/* Header */}
         <header className="bg-background shadow sticky top-0 z-50">
           <nav className="container mx-auto p-8 md:px-30 flex justify-between">
-            <h1 className="text-2xl font-bold">Ilham AM</h1>
+            <Link href="/" className="text-2xl font-bold hover:text-accent">
+              Ilham AM
+            </Link>
             <div className="space-x-4">
-              <Link href="/" className="text-accent hover:underline">
-                Home
-              </Link>
-              <Link href="/resume" className="text-accent hover:underline">
-                Resume
-              </Link>
+              {navigations.map((navigation, index) => (
+                <Link
+                  href={navigation.href}
+                  key={index}
+                  className="text-accent hover:underline"
+                >
+                  {navigation.name}
+                </Link>
+              ))}
             </div>
           </nav>
         </header>

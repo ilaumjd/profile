@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { accounts } from "./_utils/accounts";
 import Icon from "./_utils/icons";
+import { navigations } from "./_utils/navigations";
 
 export default function Home() {
   return (
@@ -23,15 +24,18 @@ export default function Home() {
         ))}
       </div>
       <p className="text-secondary mt-4 max-w-lg mx-auto">
-        {`Hi, I'm a software engineer with ${new Date().getFullYear() - 2020}+ YoE with strong expertise on mobile development, cloud services, and operational automations. Experienced on collaboration accross different timezones to deliver high-quality products. I enjoy solving complex challenges and building effective solutions.`}
+        {`Hi, I'm a software engineer with ${new Date().getFullYear() - 2020}+ YoE with strong expertise on mobile development, cloud services, and operational automation. Experienced on collaboration accross different timezones to deliver high-quality products. I enjoy solving complex challenges and building effective solutions.`}
       </p>
-      <div className="mt-6">
-        <a
-          href="/resume"
-          className="bg-accent text-background py-3 px-6 rounded-full hover:bg-background hover:text-accent hover:border-2 hover:border-accent"
-        >
-          Resume
-        </a>
+      <div className="mt-6 space-x-4">
+        {navigations.map((navigation, index) => (
+          <Link
+            href={navigation.href}
+            key={index}
+            className="bg-accent text-background py-3 px-6 rounded-full hover:bg-background hover:text-accent hover:border-2 hover:border-accent"
+          >
+            {navigation.name}
+          </Link>
+        ))}
       </div>
     </section>
   );
