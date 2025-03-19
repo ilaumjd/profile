@@ -1,11 +1,16 @@
 import { accounts } from "./_utils/accounts";
 import "./globals.css";
 import Link from "next/link";
+import { Inter } from "next/font/google";
 
 export const metadata = {
   title: "My Profile",
   description: "Ilham Aulia Majid's personal playground.",
 };
+
+const roboto = Inter({
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -14,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col">
+      <body
+        className={`${roboto.className} min-h-screen flex flex-col text-lg`}
+      >
         {/* Header */}
         <header className="bg-background shadow sticky top-0 z-50">
           <nav className="container mx-auto p-4 flex justify-between">
@@ -34,7 +41,7 @@ export default function RootLayout({
         <main className="flex-grow container mx-auto p-4">{children}</main>
 
         {/* Footer */}
-        <footer className="bg-background shadow mt-8 text-center text-sm text-secondary md:fixed md:bottom-0 md:left-0 md:right-0">
+        <footer className="bg-background shadow mt-8 text-center text-base text-secondary md:fixed md:bottom-0 md:left-0 md:right-0">
           <div className="container mx-auto p-4">
             <div className="flex justify-center space-x-4 mt-2">
               {accounts.map((account) => (

@@ -14,7 +14,7 @@ export default function Home() {
         width={1000}
         height={1000}
       />
-      <h3 className="text-xl font-semibold mt-4">Ilham Aulia Majid</h3>
+      <h3 className="text-2xl font-semibold mt-4">Ilham Aulia Majid</h3>
       <div className="flex justify-center mt-4 space-x-4">
         {accounts.map((account) => (
           <Link href={account.link} key={account.link}>
@@ -22,7 +22,7 @@ export default function Home() {
           </Link>
         ))}
       </div>
-      <p className="text-lg text-secondary mt-4 max-w-lg mx-auto">
+      <p className="text-secondary mt-4 max-w-lg mx-auto">
         {`Hi, I'm a software engineer with ${new Date().getFullYear() - 2020}+ YoE with strong expertise on mobile development, cloud services, and operational automations. Experienced on collaboration accross different timezones to deliver high-quality products. I enjoy solving complex challenges and building effective solutions.`}
       </p>
       <div className="mt-6">

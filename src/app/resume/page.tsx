@@ -92,7 +92,7 @@ export default function Resume() {
 
         <div className="mt-4 flex flex-col border border-gray-300 p-4 md:p-6 rounded-lg">
           <span>
-            <strong className="text-lg mb-2">
+            <strong className="text-xl mb-2">
               Institut Teknologi Sepuluh Nopember (ITS){" "}
             </strong>
             (2014 - 2019)
@@ -143,7 +143,7 @@ export default function Resume() {
               </span>
               {company.positions.map((pos, idx) => (
                 <div className="mt-2" key={idx}>
-                  <span className="text-lg font-semibold">{pos.name}</span>
+                  <span className="font-semibold">{pos.name}</span>
                   <br />
                   {pos.year}
                 </div>
@@ -152,7 +152,7 @@ export default function Resume() {
                 {company.stacks.map((stack, idx) => (
                   <span
                     key={idx}
-                    className="px-3 py-1 text-sm bg-tertiary text-background rounded-full"
+                    className="px-3 py-1 text-sm md:text-base bg-tertiary text-background rounded-full"
                   >
                     {stack}
                   </span>
