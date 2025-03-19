@@ -134,7 +134,9 @@ export default function Resume() {
             <div className="md:w-1/2 mt-2 md:mt-0">
               <ul className="list-disc ml-10">
                 {company.items.map((item, index) => (
-                  <li key={index}>{item}</li>
+                  <li key={index} className="mt-2">
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { accounts } from "./_utils/accounts";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Icon from "./_utils/icons";
 
 export default function Home() {
   return (
@@ -18,16 +18,12 @@ export default function Home() {
       <div className="flex justify-center mt-4 space-x-4">
         {accounts.map((account) => (
           <Link href={account.link} key={account.link}>
-            {account.name === "LinkedIn" ? (
-              <FaLinkedin size={24} />
-            ) : account.name === "GitHub" ? (
-              <FaGithub size={24} />
-            ) : null}
+            <Icon name={account.name} size={24} />
           </Link>
         ))}
       </div>
       <p className="text-lg text-gray-700 mt-4 max-w-lg mx-auto">
-        {`Hi, I'm a software engineer with ${new Date().getFullYear() - 2020}+ YoE, focused on mobile development and cloud services. I enjoy solving complex challenges and building effective solutions.`}
+        {`Hi, I'm a software engineer with ${new Date().getFullYear() - 2020}+ YoE with strong expertise on mobile development and cloud services. I enjoy solving complex challenges and building effective solutions.`}
       </p>
       <div className="mt-6">
         <a
