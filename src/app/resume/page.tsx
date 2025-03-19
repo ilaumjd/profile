@@ -21,13 +21,12 @@ export default function Resume() {
         "Migrated half (and still counting) of mobile native codes into React Native as web components and maintain interoperability with the existing native iOS/Android app, while also adding code push capabilities for instant update without app store review.",
         "Automated live classes reminder push notification service, removing manual operational effort and reducing human errors.",
         "Developed data caching utilizing AWS Lambda and S3, reducing backend scaling costs and app load time by 50%.",
-        "Implemented a Fastlane pipeline to automate the deployment process for iOS/Android app, reducing manual interventions.",
+        "Implemented Fastlane pipelines to automate the deployment process for iOS/Android app, reducing manual interventions.",
         "Implemented internal toolings website using React and Next.js",
         "Provided technical mentorship to junior engineers remotely across multiple timezones.",
       ],
       stacks: [
         "React Native",
-        "Firebase",
         "Fastlane",
         "JavaScript/TypeScript",
         "AWS",
@@ -52,7 +51,14 @@ export default function Resume() {
         "Implemented unit testing and integrated crash reporting, maintaining a 99.9% crash-free app.",
         "Engineered a real-time Q&A feature integrated with Zoom Meeting for live classroom sessions.",
       ],
-      stacks: ["iOS", "Swift", "Shell scripting", "CI/CD", "Zoom SDK"],
+      stacks: [
+        "iOS",
+        "Swift",
+        "Firebase",
+        "Shell scripting",
+        "CI/CD",
+        "Zoom SDK",
+      ],
     },
     {
       name: "PT Aku Pintar Indonesia",
@@ -73,15 +79,7 @@ export default function Resume() {
         "Developed CRUD Native iOS and Native Android education app.",
         "Implemented: search and filtering, payments, real time messaging, graphical charts, push notifications, single sign-on, a/b testing, analytics tracking, etc.",
       ],
-      stacks: [
-        "iOS",
-        "Android",
-        "Swift",
-        "Java",
-        "RxSwift",
-        "UIKit",
-        "Firebase",
-      ],
+      stacks: ["iOS", "Android", "Swift", "Java", "Firebase", "RxSwift"],
     },
   ];
   return (

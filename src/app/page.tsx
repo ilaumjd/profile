@@ -6,7 +6,7 @@ import Icon from "./_utils/icons";
 
 export default function Home() {
   return (
-    <section className="text-center mt-10">
+    <section className="text-center mt-10 md:mt-30">
       <Image
         src="/assets/photo.jpg"
         alt={""}
@@ -23,7 +23,7 @@ export default function Home() {
         ))}
       </div>
       <p className="text-lg text-gray-700 mt-4 max-w-lg mx-auto">
-        {`Hi, I'm a software engineer with ${new Date().getFullYear() - 2020}+ YoE with strong expertise on mobile development and cloud services. I enjoy solving complex challenges and building effective solutions.`}
+        {`Hi, I'm a software engineer with ${new Date().getFullYear() - 2020}+ YoE with strong expertise on mobile development, cloud services, and operational automations. Experienced on collaboration accross different timezones to deliver high-quality products. I enjoy solving complex challenges and building effective solutions.`}
       </p>
       <div className="mt-6">
         <a
