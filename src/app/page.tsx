@@ -7,7 +7,7 @@ import { navigations } from "./_utils/navigations";
 
 export default function Home() {
   return (
-    <section className="text-center mt-10 md:mt-30">
+    <section className="text-center mt-6">
       <Image
         src="/assets/photo.jpg"
         alt={""}
