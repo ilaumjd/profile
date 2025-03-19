@@ -24,7 +24,7 @@ export default function RootLayout({
       >
         {/* Header */}
         <header className="bg-background shadow sticky top-0 z-50">
-          <nav className="container mx-auto p-4 flex justify-between">
+          <nav className="container mx-auto p-8 md:px-30 flex justify-between">
             <h1 className="text-2xl font-bold">Ilham AM</h1>
             <div className="space-x-4">
               <Link href="/" className="text-accent hover:underline">
@@ -38,7 +38,9 @@ export default function RootLayout({
         </header>
 
         {/* Main Content */}
-        <main className="flex-grow container mx-auto p-4">{children}</main>
+        <main className="flex-grow container mx-auto p-8 md:px-30">
+          {children}
+        </main>
 
         {/* Footer */}
         <footer className="bg-background shadow mt-8 text-center text-base text-secondary md:fixed md:bottom-0 md:left-0 md:right-0">
