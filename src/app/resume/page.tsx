@@ -130,7 +130,7 @@ export default function Resume() {
               <strong className="text-2xl">{company.name}</strong>
               <br />
               <Link
-                className="text-blue-500 italic mt-2 hover:underline inline-flex items-center"
+                className="text-accent italic mt-2 hover:underline inline-flex items-center"
                 href={company.link}
               >
                 <IoGlobeOutline className="mr-1" />
@@ -152,7 +152,7 @@ export default function Resume() {
                 {company.stacks.map((stack, idx) => (
                   <span
                     key={idx}
-                    className="px-3 py-1 text-sm bg-gray-700 text-gray-100 rounded-full"
+                    className="px-3 py-1 text-sm bg-tertiary text-background rounded-full"
                   >
                     {stack}
                   </span>

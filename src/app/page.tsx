@@ -22,13 +22,13 @@ export default function Home() {
           </Link>
         ))}
       </div>
-      <p className="text-lg text-gray-700 mt-4 max-w-lg mx-auto">
+      <p className="text-lg text-secondary mt-4 max-w-lg mx-auto">
         {`Hi, I'm a software engineer with ${new Date().getFullYear() - 2020}+ YoE with strong expertise on mobile development, cloud services, and operational automations. Experienced on collaboration accross different timezones to deliver high-quality products. I enjoy solving complex challenges and building effective solutions.`}
       </p>
       <div className="mt-6">
         <a
           href="/resume"
-          className="bg-blue-500 hover:bg-blue-700 text-white py-3 px-6 rounded-full"
+          className="bg-accent text-background py-3 px-6 rounded-full hover:bg-background hover:text-accent hover:border-2 hover:border-accent"
         >
           Resume
         </a>

@@ -14,16 +14,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-gray-100 text-gray-900">
+      <body className="min-h-screen flex flex-col">
         {/* Header */}
-        <header className="bg-black shadow sticky top-0 z-50">
+        <header className="bg-background shadow sticky top-0 z-50">
           <nav className="container mx-auto p-4 flex justify-between">
             <h1 className="text-2xl font-bold">Ilham AM</h1>
             <div className="space-x-4">
-              <Link href="/" className="text-blue-500 hover:underline">
+              <Link href="/" className="text-accent hover:underline">
                 Home
               </Link>
-              <Link href="/resume" className="text-blue-500 hover:underline">
+              <Link href="/resume" className="text-accent hover:underline">
                 Resume
               </Link>
             </div>
@@ -34,18 +34,12 @@ export default function RootLayout({
         <main className="flex-grow container mx-auto p-4">{children}</main>
 
         {/* Footer */}
-        <footer
-          className={`
-            bg-black shadow mt-8
-            text-center text-sm text-gray-500
-            ${"md:fixed md:bottom-0 md:left-0 md:right-0"}
-          `}
-        >
+        <footer className="bg-background shadow mt-8 text-center text-sm text-secondary md:fixed md:bottom-0 md:left-0 md:right-0">
           <div className="container mx-auto p-4">
             <div className="flex justify-center space-x-4 mt-2">
               {accounts.map((account) => (
                 <Link
-                  className="text-blue-500 hover:underline"
+                  className="text-accent hover:underline"
                   href={account.link}
                   key={account.link}
                 >
