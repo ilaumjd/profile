@@ -19,9 +19,19 @@ export default function Resume() {
       ],
       items: [
         "Migrated half (and still counting) of mobile native codes into React Native as web components and maintain interoperability with the existing native iOS/Android app, while also adding code push capabilities for instant update without app store review.",
-        "Migrated and automated live class reminder push notification from a paid service into a free and fully automated service using Firebase Cloud Messaging and Cloud Functions without any backend dependencies, removing manual operational effort and reducing human errors.",
-        "Implemented data caching utilizing AWS Lambda and S3, reducing backend scaling costs and app load time by 50%.",
-        "Provided technical mentorship to junior engineers.",
+        "Automated live classes reminder push notification service, removing manual operational effort and reducing human errors.",
+        "Developed data caching utilizing AWS Lambda and S3, reducing backend scaling costs and app load time by 50%.",
+        "Implemented a Fastlane pipeline to automate the deployment process for iOS/Android app, reducing manual interventions.",
+        "Implemented internal toolings website using React and Next.js",
+        "Provided technical mentorship to junior engineers remotely across multiple timezones.",
+      ],
+      stacks: [
+        "React Native",
+        "Firebase",
+        "Fastlane",
+        "JavaScript/TypeScript",
+        "AWS",
+        "React & Next.js",
       ],
     },
     {
@@ -31,7 +41,7 @@ export default function Resume() {
       location: "Remote, Indonesia",
       positions: [
         {
-          name: "Product Engineer",
+          name: "Product Engineer (iOS)",
           year: "Jan 2022 - Sep 2023",
         },
       ],
@@ -42,6 +52,7 @@ export default function Resume() {
         "Implemented unit testing and integrated crash reporting, maintaining a 99.9% crash-free app.",
         "Engineered a real-time Q&A feature integrated with Zoom Meeting for live classroom sessions.",
       ],
+      stacks: ["iOS", "Swift", "Shell scripting", "CI/CD", "Zoom SDK"],
     },
     {
       name: "PT Aku Pintar Indonesia",
@@ -61,6 +72,15 @@ export default function Resume() {
       items: [
         "Developed CRUD Native iOS and Native Android education app.",
         "Implemented: search and filtering, payments, real time messaging, graphical charts, push notifications, single sign-on, a/b testing, analytics tracking, etc.",
+      ],
+      stacks: [
+        "iOS",
+        "Android",
+        "Swift",
+        "Java",
+        "RxSwift",
+        "UIKit",
+        "Firebase",
       ],
     },
   ];
@@ -130,6 +150,16 @@ export default function Resume() {
                   {pos.year}
                 </div>
               ))}
+              <div className="flex flex-wrap gap-2 mt-4">
+                {company.stacks.map((stack, idx) => (
+                  <span
+                    key={idx}
+                    className="px-3 py-1 text-sm bg-gray-700 text-gray-100 rounded-full"
+                  >
+                    {stack}
+                  </span>
+                ))}
+              </div>
             </div>
             <div className="md:w-1/2 mt-2 md:mt-0">
               <ul className="list-disc ml-10">
