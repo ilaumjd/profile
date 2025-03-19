@@ -83,7 +83,7 @@ export default function Resume() {
     },
   ];
   return (
-    <section className="md:mt-10 md:mb-30">
+    <section className="md:mb-30">
       <h2 className="text-3xl font-semibold mb-6">Resume</h2>
 
       {/* Education Section */}
