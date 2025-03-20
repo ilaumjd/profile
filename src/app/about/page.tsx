@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section className="md:mb-30">
       <h2 className="text-3xl font-semibold mb-6">About</h2>
-      <p className="text-xl mt-4 space-y-4 leading-relaxed">
+      <p className="text-lg mt-4 space-y-4 leading-relaxed">
         <span className="block">
           Hello, I am <strong>Ilham Aulia Majid</strong> 👋
         </span>
@@ -15,15 +15,17 @@ export default function About() {
         </span>
 
         <span className="block">
-          {`Outside of work, I enjoy watching anime and playing games. I also love
-          going for bike rides and having walks (because I cannot run :p)
+          {`Outside of work, I enjoy watching anime and playing video games. I also love
+          going for bike rides and having walks (because I'm bad at running :p)
           and enjoying the pain and joy that comes with it. Those are the first
           thing I usually do in the morning before doing chores. Yes, I'm a morning person and I
           don't have any skill to sleep in the morning, unless I got real tired from the previous day.`}
         </span>
 
         <span className="block">
-          This is my personal website. Mainly used for showing my Portfolio and
+          This is my personal website. Mainly used for showing my
+          <Hyperlink text={"Portfolio"} url={"/showcase"} />
+          and
           <Hyperlink text={"Resume"} url={"/resume"} className="ml-1" />, but I
           also use this as my place to experiment and try things out. Especially
           when I have a free time and feel motivated.
@@ -35,7 +37,7 @@ export default function About() {
           This website is built using
           <Hyperlink text={"Next.js"} url={"https://nextjs.org/"} />
           and
-          <Hyperlink text={"TailwindCSS"} url={"https://tailwindcss.com/"} />-
+          <Hyperlink text={"Tailwind CSS"} url={"https://tailwindcss.com/"} />-
           currently two of the most popular frameworks for building modern
           websites. The font used here is
           <Hyperlink
@@ -102,21 +104,20 @@ export default function About() {
         </span>
 
         <span className="block">
-          Besides the default one shipped with the OS, I also use the
+          Besides the default one shipped with the OS, I also use
           <Hyperlink text={"Nix"} url={"https://github.com/NixOS/nix"} />
           package manager. I love it because I can use it on both Linux and
           macOS. The package manager itself is declarative and reproducible,
           allowing me to easily replicate my setup across machines, even with
           different operating systems. I just need to write the configuration
           once and apply it anywhere.
-          {` That's why my app of choice is usually the
-          one that have the cross-platform support.`}
+          {` That's why I also always prefer apps that offer cross-platform support.`}
         </span>
 
         <span className="block">
-          Finally, if you want to reach me, you can access one of the social
-          media links at the bottom of this web page. Or just send me an email
-          at
+          Finally, if you want to get in touch, you can find me through the
+          social media links at the bottom of this page. Alternatively, feel
+          free to email me at
           <Hyperlink
             text={"ilaumjd@gmail.com"}
             url={"mailto:ilaumjd@gmail.com"}

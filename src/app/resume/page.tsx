@@ -21,8 +21,8 @@ export default function Resume() {
         "Migrated half (and still counting) of mobile native codes into React Native as web components and maintain interoperability with the existing native iOS/Android app, while also adding code push capabilities for instant update without app store review.",
         "Automated live classes reminder push notification service, removing manual operational effort and reducing human errors.",
         "Developed data caching utilizing AWS Lambda and S3, reducing backend scaling costs and app load time by 50%.",
-        "Implemented Fastlane pipelines to automate the deployment process for iOS/Android app, reducing manual interventions.",
-        "Implemented internal toolings website using React and Next.js",
+        "Integrated Fastlane pipelines to automate the deployment process for iOS/Android app, reducing manual interventions.",
+        "Implemented internal toolings website using React and Next.js.",
         "Provided technical mentorship to junior engineers remotely across multiple timezones.",
       ],
       stacks: [
@@ -30,7 +30,7 @@ export default function Resume() {
         "Fastlane",
         "JavaScript/TypeScript",
         "AWS",
-        "React & Next.js",
+        "Next.js",
       ],
     },
     {
@@ -46,7 +46,7 @@ export default function Resume() {
       ],
       items: [
         "Collaborated on planning and user experience design for delivering product stories on a live classroom-based app.",
-        "Integrated CI/CD pipeline and automated common code review chores.",
+        "Integrated CI/CD pipelines and automated common code review chores.",
         "Developed automation scripts for development tooling setup to maintain consistency across the team members.",
         "Implemented unit testing and integrated crash reporting, maintaining a 99.9% crash-free app.",
         "Engineered a real-time Q&A feature integrated with Zoom Meeting for live classroom sessions.",

@@ -31,7 +31,7 @@ export default function RootLayout({
               href="/"
               className="text-2xl text-accent font-bold hover:text-accent hidden sm:block"
             >
-              Ilham AM
+              Ilham Aulia Majid
             </Link>
             <div className="space-x-4">
               {navigations.map((navigation, index) => (

@@ -13,9 +13,9 @@ export default function Showcase() {
     {
       name: "Howto",
       description:
-        "CLI tool for finding coding answers instantly by scraping from StackOverflow.",
+        "Find coding answers directly from terminal by scraping from StackOverflow.",
       href: "https://github.com/ilaumjd/howto",
-      stacks: ["Swift"],
+      stacks: ["Swift", "CLI"],
     },
   ];
   return (
