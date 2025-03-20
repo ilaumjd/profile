@@ -26,7 +26,7 @@ export default function RootLayout({
       >
         {/* Header */}
         <header className="bg-background shadow md:sticky top-0 z-50">
-          <nav className="container mx-auto p-8 md:px-30 flex justify-between">
+          <nav className="container mx-auto p-8 md:px-30 flex justify-center md:justify-between">
             <Link
               href="/"
               className="text-2xl text-accent font-bold hover:text-accent hidden sm:block"
