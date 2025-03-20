@@ -26,7 +26,7 @@ export default function Home() {
       <p className="text-secondary mt-4 max-w-lg mx-auto">
         {`Hi, I'm a software engineer with ${new Date().getFullYear() - 2020}+ YoE with strong expertise on mobile development, cloud services, and operational automation. Experienced on collaboration accross different timezones to deliver high-quality products. I enjoy solving complex challenges and building effective solutions.`}
       </p>
-      <div className="mt-6 space-x-4">
+      <div className="mt-6 flex flex-wrap justify-center gap-4">
         {navigations.slice(1).map((navigation, index) => (
           <Link
             href={navigation.href}

@@ -25,11 +25,11 @@ export default function RootLayout({
         className={`${roboto.className} min-h-screen flex flex-col text-lg`}
       >
         {/* Header */}
-        <header className="bg-background shadow sticky top-0 z-50">
+        <header className="bg-background shadow md:sticky top-0 z-50">
           <nav className="container mx-auto p-8 md:px-30 flex justify-between">
             <Link
               href="/"
-              className="text-2xl text-accent font-bold hover:text-accent"
+              className="text-2xl text-accent font-bold hover:text-accent hidden sm:block"
             >
               Ilham AM
             </Link>
