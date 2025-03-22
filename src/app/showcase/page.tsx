@@ -32,7 +32,6 @@ export default function Showcase() {
             {project.name}
             <GoArrowUpRight className="inline-block align-middle" />
           </strong>
-          <br />
           {project.description}
           <div className="flex flex-wrap gap-2 mt-2">
             {project.stacks.map((stack, idx) => (
