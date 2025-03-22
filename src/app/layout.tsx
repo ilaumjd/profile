@@ -26,7 +26,7 @@ export default function RootLayout({
       >
         {/* Header */}
         <header className="bg-background shadow md:sticky top-0 z-50">
-          <nav className="container mx-auto p-8 md:px-30 flex justify-center md:justify-between">
+          <nav className="container mx-auto p-4 md:px-30 flex justify-center md:justify-between">
             <Link
               href="/"
               className="text-2xl text-accent font-bold hover:text-accent hidden sm:block"
@@ -55,7 +55,7 @@ export default function RootLayout({
         {/* Footer */}
         <footer className="bg-background shadow mt-8 text-center text-base text-secondary md:fixed md:bottom-0 md:left-0 md:right-0">
           <div className="container mx-auto p-4">
-            <div className="flex justify-center space-x-4 mt-2">
+            <div className="flex justify-center space-x-4">
               {accounts.map((account) => (
                 <Hyperlink
                   text={account.name}

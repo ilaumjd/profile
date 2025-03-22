@@ -31,7 +31,7 @@ export default function Home() {
           <Link
             href={navigation.href}
             key={index}
-            className="bg-accent text-background py-3 px-6 rounded-full hover:bg-background hover:text-accent hover:border-2 hover:border-accent"
+            className="bg-accent text-background py-2 px-4 rounded-full hover:bg-background hover:text-accent border-2 border-accent"
           >
             {navigation.name}
           </Link>
