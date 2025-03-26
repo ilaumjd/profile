@@ -53,7 +53,7 @@ export default function RootLayout({
         </main>
 
         {/* Footer */}
-        <footer className="bg-background shadow mt-8 text-center text-base text-secondary md:fixed md:bottom-0 md:left-0 md:right-0">
+        <footer className="bg-background shadow mt-8 text-center text-sm text-secondary md:fixed md:bottom-0 md:left-0 md:right-0">
           <div className="container mx-auto p-4">
             <div className="flex justify-center space-x-4">
               {accounts.map((account) => (
