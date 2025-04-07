@@ -3,6 +3,9 @@ import Link from "next/link";
 import React from "react";
 import { IoGlobeOutline } from "react-icons/io5";
 import { MdLocationOn } from "react-icons/md";
+import getMetadata from "../_utils/metadata";
+
+export const metadata = getMetadata("Resume");
 
 export default function Resume() {
   const companies = [

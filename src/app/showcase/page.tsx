@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
+import getMetadata from "../_utils/metadata";
+
+export const metadata = getMetadata("Showcase");
 
 export default function Showcase() {
   const projects = [

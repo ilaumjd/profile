@@ -4,11 +4,9 @@ import Link from "next/link";
 import { Inter } from "next/font/google";
 import { navigations } from "./_utils/navigations";
 import Hyperlink from "./_utils/hyperlink";
+import getMetadata from "./_utils/metadata";
 
-export const metadata = {
-  title: "My Profile",
-  description: "Ilham Aulia Majid's personal playground.",
-};
+export const metadata = getMetadata();
 
 const roboto = Inter({
   subsets: ["latin"],

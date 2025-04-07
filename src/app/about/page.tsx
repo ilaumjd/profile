@@ -1,5 +1,8 @@
 import React from "react";
 import Hyperlink from "../_utils/hyperlink";
+import getMetadata from "../_utils/metadata";
+
+export const metadata = getMetadata("About");
 
 export default function About() {
   return (
