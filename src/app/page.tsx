@@ -18,7 +18,7 @@ export default function Home() {
       <h3 className="text-2xl font-semibold mt-4">Ilham Aulia Majid</h3>
       <div className="flex justify-center mt-4 space-x-4">
         {accounts.map((account) => (
-          <Link href={account.link} key={account.link}>
+          <Link href={account.link} target="_blank" key={account.link}>
             <Icon name={account.name} size={24} />
           </Link>
         ))}

@@ -27,6 +27,7 @@ export default function Showcase() {
           className="mt-4 flex flex-col text-lg border border-gray-300 p-4 md:p-6 rounded-lg hover:bg-secondary hover:text-background"
           key={index}
           href={project.href}
+          target="_blank"
         >
           <strong className="text-2xl mb-2">
             {project.name}

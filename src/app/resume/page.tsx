@@ -132,6 +132,7 @@ export default function Resume() {
               <Link
                 className="text-accent italic mt-2 hover:underline inline-flex items-center"
                 href={company.link}
+                target="_blank"
               >
                 <IoGlobeOutline className="mr-1" />
                 {company.link}

@@ -11,6 +11,7 @@ export default function Hyperlink({ text, url, className }: HyperlinkProps) {
   return (
     <Link
       href={url}
+      target={url[0] == "/" ? "_top" : "_blank"}
       className={`text-accent hover:underline ${className || "mx-1"}`}
     >
       {text}
